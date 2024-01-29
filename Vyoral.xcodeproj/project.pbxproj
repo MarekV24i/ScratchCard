@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA4723582B5A7ECD00208D8B /* ScratchCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4723572B5A7ECD00208D8B /* ScratchCardModel.swift */; };
+		EA47235B2B5A8B0D00208D8B /* ScratchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47235A2B5A8B0D00208D8B /* ScratchOperation.swift */; };
+		EA47235E2B5ACA4100208D8B /* ScratchCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47235D2B5ACA4100208D8B /* ScratchCardViewModelTests.swift */; };
+		EA4723622B5AD32400208D8B /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4723612B5AD32400208D8B /* NetworkTests.swift */; };
+		EA755A3C2B582914008074B1 /* VyoralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A3B2B582914008074B1 /* VyoralApp.swift */; };
+		EA755A402B582915008074B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA755A3F2B582915008074B1 /* Assets.xcassets */; };
+		EA755A432B582915008074B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA755A422B582915008074B1 /* Preview Assets.xcassets */; };
+		EA755A4D2B582915008074B1 /* TestMockUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A4C2B582915008074B1 /* TestMockUps.swift */; };
+		EA755A572B582916008074B1 /* VyoralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A562B582916008074B1 /* VyoralUITests.swift */; };
+		EA755A682B582983008074B1 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A672B582983008074B1 /* MainScreen.swift */; };
+		EA755A6B2B5829BD008074B1 /* ScratchCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A6A2B5829BD008074B1 /* ScratchCardViewModel.swift */; };
+		EA755A702B5836E2008074B1 /* O2ActivationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A6F2B5836E2008074B1 /* O2ActivationAPI.swift */; };
+		EA755A722B5837A4008074B1 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A712B5837A4008074B1 /* NetworkRepository.swift */; };
+		EA755A752B5837D1008074B1 /* ActivationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A742B5837D1008074B1 /* ActivationEntity.swift */; };
+		EA755A782B583805008074B1 /* RequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A772B583804008074B1 /* RequestDispatcher.swift */; };
+		EA755A7A2B58383C008074B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A792B58383C008074B1 /* Router.swift */; };
+		EA755A7C2B58385F008074B1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A7B2B58385F008074B1 /* NetworkError.swift */; };
+		EA755A822B591E1E008074B1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A812B591E1E008074B1 /* Colors.swift */; };
+		EA755A842B591E5B008074B1 /* StyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A832B591E5B008074B1 /* StyleModifiers.swift */; };
+		EA755A862B591E9E008074B1 /* View+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A852B591E9E008074B1 /* View+Styling.swift */; };
+		EA755A882B592C5B008074B1 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA755A872B592C5B008074B1 /* LoaderView.swift */; };
+		EA755A8E2B59A032008074B1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA755A8D2B59A032008074B1 /* Launch Screen.storyboard */; };
+		EA755A902B59A687008074B1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EA755A8F2B59A687008074B1 /* Localizable.xcstrings */; };
+		EAADDC082B66AF2F00EA9DB5 /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADDC072B66AF2F00EA9DB5 /* ScratchView.swift */; };
+		EAADDC0A2B66B27A00EA9DB5 /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADDC092B66B27A00EA9DB5 /* ActivationView.swift */; };
+		EAADDC0C2B678FAD00EA9DB5 /* ScratchOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADDC0B2B678FAD00EA9DB5 /* ScratchOperationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA755A492B582915008074B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA755A302B582914008074B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA755A372B582914008074B1;
+			remoteInfo = Vyoral;
+		};
+		EA755A532B582916008074B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA755A302B582914008074B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA755A372B582914008074B1;
+			remoteInfo = Vyoral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA4723572B5A7ECD00208D8B /* ScratchCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardModel.swift; sourceTree = "<group>"; };
+		EA47235A2B5A8B0D00208D8B /* ScratchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchOperation.swift; sourceTree = "<group>"; };
+		EA47235D2B5ACA4100208D8B /* ScratchCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardViewModelTests.swift; sourceTree = "<group>"; };
+		EA4723612B5AD32400208D8B /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		EA755A382B582914008074B1 /* Vyoral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vyoral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA755A3B2B582914008074B1 /* VyoralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VyoralApp.swift; sourceTree = "<group>"; };
+		EA755A3F2B582915008074B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA755A422B582915008074B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA755A482B582915008074B1 /* VyoralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VyoralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA755A4C2B582915008074B1 /* TestMockUps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMockUps.swift; sourceTree = "<group>"; };
+		EA755A522B582916008074B1 /* VyoralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VyoralUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA755A562B582916008074B1 /* VyoralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VyoralUITests.swift; sourceTree = "<group>"; };
+		EA755A672B582983008074B1 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		EA755A6A2B5829BD008074B1 /* ScratchCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardViewModel.swift; sourceTree = "<group>"; };
+		EA755A6F2B5836E2008074B1 /* O2ActivationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O2ActivationAPI.swift; sourceTree = "<group>"; };
+		EA755A712B5837A4008074B1 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		EA755A742B5837D1008074B1 /* ActivationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationEntity.swift; sourceTree = "<group>"; };
+		EA755A772B583804008074B1 /* RequestDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDispatcher.swift; sourceTree = "<group>"; };
+		EA755A792B58383C008074B1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EA755A7B2B58385F008074B1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EA755A812B591E1E008074B1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EA755A832B591E5B008074B1 /* StyleModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
+		EA755A852B591E9E008074B1 /* View+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Styling.swift"; sourceTree = "<group>"; };
+		EA755A872B592C5B008074B1 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		EA755A8D2B59A032008074B1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EA755A8F2B59A687008074B1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		EAADDC072B66AF2F00EA9DB5 /* ScratchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
+		EAADDC092B66B27A00EA9DB5 /* ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationView.swift; sourceTree = "<group>"; };
+		EAADDC0B2B678FAD00EA9DB5 /* ScratchOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchOperationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA755A352B582914008074B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A452B582915008074B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A4F2B582916008074B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA4723592B5A8AE900208D8B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA47235A2B5A8B0D00208D8B /* ScratchOperation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA47235C2B5A91C800208D8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA4723572B5A7ECD00208D8B /* ScratchCardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA755A2F2B582914008074B1 = {
+			isa = PBXGroup;
+			children = (
+				EA755A3A2B582914008074B1 /* Vyoral */,
+				EA755A4B2B582915008074B1 /* VyoralTests */,
+				EA755A552B582916008074B1 /* VyoralUITests */,
+				EA755A392B582914008074B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA755A392B582914008074B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A382B582914008074B1 /* Vyoral.app */,
+				EA755A482B582915008074B1 /* VyoralTests.xctest */,
+				EA755A522B582916008074B1 /* VyoralUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA755A3A2B582914008074B1 /* Vyoral */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A662B582972008074B1 /* Views */,
+				EA755A692B5829AD008074B1 /* ViewModels */,
+				EA47235C2B5A91C800208D8B /* Models */,
+				EA755A6E2B5836C4008074B1 /* Network */,
+				EA755A802B591E0B008074B1 /* Styling */,
+				EA4723592B5A8AE900208D8B /* Utils */,
+				EA755A3B2B582914008074B1 /* VyoralApp.swift */,
+				EA755A8F2B59A687008074B1 /* Localizable.xcstrings */,
+				EA755A3F2B582915008074B1 /* Assets.xcassets */,
+				EA755A412B582915008074B1 /* Preview Content */,
+				EA755A8D2B59A032008074B1 /* Launch Screen.storyboard */,
+			);
+			path = Vyoral;
+			sourceTree = "<group>";
+		};
+		EA755A412B582915008074B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A422B582915008074B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA755A4B2B582915008074B1 /* VyoralTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A4C2B582915008074B1 /* TestMockUps.swift */,
+				EA47235D2B5ACA4100208D8B /* ScratchCardViewModelTests.swift */,
+				EA4723612B5AD32400208D8B /* NetworkTests.swift */,
+				EAADDC0B2B678FAD00EA9DB5 /* ScratchOperationTests.swift */,
+			);
+			path = VyoralTests;
+			sourceTree = "<group>";
+		};
+		EA755A552B582916008074B1 /* VyoralUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A562B582916008074B1 /* VyoralUITests.swift */,
+			);
+			path = VyoralUITests;
+			sourceTree = "<group>";
+		};
+		EA755A662B582972008074B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A672B582983008074B1 /* MainScreen.swift */,
+				EA755A872B592C5B008074B1 /* LoaderView.swift */,
+				EAADDC072B66AF2F00EA9DB5 /* ScratchView.swift */,
+				EAADDC092B66B27A00EA9DB5 /* ActivationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA755A692B5829AD008074B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A6A2B5829BD008074B1 /* ScratchCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA755A6E2B5836C4008074B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A762B5837F8008074B1 /* Request */,
+				EA755A732B5837C0008074B1 /* Response */,
+				EA755A6F2B5836E2008074B1 /* O2ActivationAPI.swift */,
+				EA755A712B5837A4008074B1 /* NetworkRepository.swift */,
+				EA755A7B2B58385F008074B1 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA755A732B5837C0008074B1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A742B5837D1008074B1 /* ActivationEntity.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EA755A762B5837F8008074B1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A772B583804008074B1 /* RequestDispatcher.swift */,
+				EA755A792B58383C008074B1 /* Router.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EA755A802B591E0B008074B1 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				EA755A812B591E1E008074B1 /* Colors.swift */,
+				EA755A832B591E5B008074B1 /* StyleModifiers.swift */,
+				EA755A852B591E9E008074B1 /* View+Styling.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA755A372B582914008074B1 /* Vyoral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA755A5C2B582916008074B1 /* Build configuration list for PBXNativeTarget "Vyoral" */;
+			buildPhases = (
+				EA755A342B582914008074B1 /* Sources */,
+				EA755A352B582914008074B1 /* Frameworks */,
+				EA755A362B582914008074B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vyoral;
+			productName = Vyoral;
+			productReference = EA755A382B582914008074B1 /* Vyoral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA755A472B582915008074B1 /* VyoralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA755A5F2B582916008074B1 /* Build configuration list for PBXNativeTarget "VyoralTests" */;
+			buildPhases = (
+				EA755A442B582915008074B1 /* Sources */,
+				EA755A452B582915008074B1 /* Frameworks */,
+				EA755A462B582915008074B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA755A4A2B582915008074B1 /* PBXTargetDependency */,
+			);
+			name = VyoralTests;
+			productName = VyoralTests;
+			productReference = EA755A482B582915008074B1 /* VyoralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA755A512B582916008074B1 /* VyoralUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA755A622B582916008074B1 /* Build configuration list for PBXNativeTarget "VyoralUITests" */;
+			buildPhases = (
+				EA755A4E2B582916008074B1 /* Sources */,
+				EA755A4F2B582916008074B1 /* Frameworks */,
+				EA755A502B582916008074B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA755A542B582916008074B1 /* PBXTargetDependency */,
+			);
+			name = VyoralUITests;
+			productName = VyoralUITests;
+			productReference = EA755A522B582916008074B1 /* VyoralUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA755A302B582914008074B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EA755A372B582914008074B1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EA755A472B582915008074B1 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EA755A372B582914008074B1;
+					};
+					EA755A512B582916008074B1 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EA755A372B582914008074B1;
+					};
+				};
+			};
+			buildConfigurationList = EA755A332B582914008074B1 /* Build configuration list for PBXProject "Vyoral" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA755A2F2B582914008074B1;
+			productRefGroup = EA755A392B582914008074B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA755A372B582914008074B1 /* Vyoral */,
+				EA755A472B582915008074B1 /* VyoralTests */,
+				EA755A512B582916008074B1 /* VyoralUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA755A362B582914008074B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA755A8E2B59A032008074B1 /* Launch Screen.storyboard in Resources */,
+				EA755A432B582915008074B1 /* Preview Assets.xcassets in Resources */,
+				EA755A902B59A687008074B1 /* Localizable.xcstrings in Resources */,
+				EA755A402B582915008074B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A462B582915008074B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A502B582916008074B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA755A342B582914008074B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA755A722B5837A4008074B1 /* NetworkRepository.swift in Sources */,
+				EA755A702B5836E2008074B1 /* O2ActivationAPI.swift in Sources */,
+				EA755A882B592C5B008074B1 /* LoaderView.swift in Sources */,
+				EA755A782B583805008074B1 /* RequestDispatcher.swift in Sources */,
+				EA755A752B5837D1008074B1 /* ActivationEntity.swift in Sources */,
+				EA755A7A2B58383C008074B1 /* Router.swift in Sources */,
+				EA755A822B591E1E008074B1 /* Colors.swift in Sources */,
+				EA47235B2B5A8B0D00208D8B /* ScratchOperation.swift in Sources */,
+				EA755A6B2B5829BD008074B1 /* ScratchCardViewModel.swift in Sources */,
+				EA755A682B582983008074B1 /* MainScreen.swift in Sources */,
+				EAADDC082B66AF2F00EA9DB5 /* ScratchView.swift in Sources */,
+				EAADDC0A2B66B27A00EA9DB5 /* ActivationView.swift in Sources */,
+				EA755A842B591E5B008074B1 /* StyleModifiers.swift in Sources */,
+				EA755A862B591E9E008074B1 /* View+Styling.swift in Sources */,
+				EA4723582B5A7ECD00208D8B /* ScratchCardModel.swift in Sources */,
+				EA755A3C2B582914008074B1 /* VyoralApp.swift in Sources */,
+				EA755A7C2B58385F008074B1 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A442B582915008074B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA47235E2B5ACA4100208D8B /* ScratchCardViewModelTests.swift in Sources */,
+				EA4723622B5AD32400208D8B /* NetworkTests.swift in Sources */,
+				EA755A4D2B582915008074B1 /* TestMockUps.swift in Sources */,
+				EAADDC0C2B678FAD00EA9DB5 /* ScratchOperationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA755A4E2B582916008074B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA755A572B582916008074B1 /* VyoralUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA755A4A2B582915008074B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA755A372B582914008074B1 /* Vyoral */;
+			targetProxy = EA755A492B582915008074B1 /* PBXContainerItemProxy */;
+		};
+		EA755A542B582916008074B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA755A372B582914008074B1 /* Vyoral */;
+			targetProxy = EA755A532B582916008074B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA755A5A2B582916008074B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA755A5B2B582916008074B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA755A5D2B582916008074B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vyoral/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.Vyoral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA755A5E2B582916008074B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vyoral/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.Vyoral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA755A602B582916008074B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.VyoralTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vyoral.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vyoral";
+			};
+			name = Debug;
+		};
+		EA755A612B582916008074B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.VyoralTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vyoral.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vyoral";
+			};
+			name = Release;
+		};
+		EA755A632B582916008074B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.VyoralUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vyoral;
+			};
+			name = Debug;
+		};
+		EA755A642B582916008074B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RP79N74U9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mv.demoapp.VyoralUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vyoral;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA755A332B582914008074B1 /* Build configuration list for PBXProject "Vyoral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA755A5A2B582916008074B1 /* Debug */,
+				EA755A5B2B582916008074B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA755A5C2B582916008074B1 /* Build configuration list for PBXNativeTarget "Vyoral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA755A5D2B582916008074B1 /* Debug */,
+				EA755A5E2B582916008074B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA755A5F2B582916008074B1 /* Build configuration list for PBXNativeTarget "VyoralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA755A602B582916008074B1 /* Debug */,
+				EA755A612B582916008074B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA755A622B582916008074B1 /* Build configuration list for PBXNativeTarget "VyoralUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA755A632B582916008074B1 /* Debug */,
+				EA755A642B582916008074B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA755A302B582914008074B1 /* Project object */;
+}
