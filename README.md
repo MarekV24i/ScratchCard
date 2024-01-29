@@ -1,0 +1,2 @@
+# ScratchCard
+ScratchCard demo app
